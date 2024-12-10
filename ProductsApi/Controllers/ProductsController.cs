@@ -81,6 +81,11 @@ namespace ProductsApi.Controllers
                 
             });
         }
-       
+        [HttpGet("ProductCategory")]
+        public async Task<ActionResult<IEnumerable<string>>> GetAllCategories()
+        {
+            return _repo.GetAllCategories();
+        }
+
     }
 }
