@@ -41,3 +41,48 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignore Migrations folder in all subdirectories
+**/Migrations/
+
+# Ignore Debug folder in all subdirectories
+**/Debug/
+
+# Ignore bin and obj folders in all subdirectories
+**/bin/
+**/obj/
+
+# Ignore .vs folders in all subdirectories
+**/.vs/
+
+# Ignore appsettings (You can specify different appsettings versions if needed)
+appsettings.json
+appsettings.Development.json
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore IIS Express config folder
+/.vsconfig
+
+# Ignore Resharper files
+.idea/
+
+# Ignore NuGet packages
+/packages/
+
+# Ignore log files
+*.log
+
+# Ignore test output
+test-results/
+
+
+# Ignore bin and obj directories
+**/bin/
+**/obj/
+**/Debug/
+**/.vs/

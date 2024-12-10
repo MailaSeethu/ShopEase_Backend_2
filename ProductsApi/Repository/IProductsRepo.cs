@@ -11,6 +11,8 @@ namespace ProductsApi.Repository
         Products UpdateStock(Products products);
 
         bool UpdateRating(Rating rating);
-      
+        List<string> GetAllCategories();
+
+
     }
 }

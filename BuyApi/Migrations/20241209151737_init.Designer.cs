@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BuyApi.Migrations
 {
     [DbContext(typeof(BuyApiContext))]
-    [Migration("20240831182304_init")]
+    [Migration("20241209151737_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -91,6 +91,43 @@ namespace BuyApi.Migrations
                     b.HasKey("CouponId");
 
                     b.ToTable("CouponCodes");
+
+                    b.HasData(
+                        new
+                        {
+                            CouponId = 1,
+                            Couponcode = "SHOPEASE20",
+                            IsApplicable = true,
+                            description = "Flat $20 off on minimum purchase of $50 and Free shipping."
+                        },
+                        new
+                        {
+                            CouponId = 2,
+                            Couponcode = "SUMMERSALE",
+                            IsApplicable = false,
+                            description = "Flat 25% off on summer collection."
+                        },
+                        new
+                        {
+                            CouponId = 3,
+                            Couponcode = "FREESHIP",
+                            IsApplicable = true,
+                            description = "Free shipping on orders over $50"
+                        },
+                        new
+                        {
+                            CouponId = 4,
+                            Couponcode = "SAVE10",
+                            IsApplicable = true,
+                            description = "Flat $10 off on your first purchase (min purchase of $50)."
+                        },
+                        new
+                        {
+                            CouponId = 5,
+                            Couponcode = "BUY2GET50OFF",
+                            IsApplicable = true,
+                            description = "Buy 2, Get 50% Off on the 3rd One."
+                        });
                 });
 #pragma warning restore 612, 618
         }

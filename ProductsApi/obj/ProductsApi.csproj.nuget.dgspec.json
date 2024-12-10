@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maila\\Downloads\\ECommerce-main (1)\\ECommerce-main\\Backup-6(CV)\\Backend\\ProductsApi\\ProductsApi.csproj": {}
+    "C:\\E-Commerce\\ShopEase_Backend_2\\ProductsApi\\ProductsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maila\\Downloads\\ECommerce-main (1)\\ECommerce-main\\Backup-6(CV)\\Backend\\ProductsApi\\ProductsApi.csproj": {
+    "C:\\E-Commerce\\ShopEase_Backend_2\\ProductsApi\\ProductsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maila\\Downloads\\ECommerce-main (1)\\ECommerce-main\\Backup-6(CV)\\Backend\\ProductsApi\\ProductsApi.csproj",
+        "projectUniqueName": "C:\\E-Commerce\\ShopEase_Backend_2\\ProductsApi\\ProductsApi.csproj",
         "projectName": "ProductsApi",
-        "projectPath": "C:\\Users\\maila\\Downloads\\ECommerce-main (1)\\ECommerce-main\\Backup-6(CV)\\Backend\\ProductsApi\\ProductsApi.csproj",
-        "packagesPath": "C:\\Users\\maila\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maila\\Downloads\\ECommerce-main (1)\\ECommerce-main\\Backup-6(CV)\\Backend\\ProductsApi\\obj\\",
+        "projectPath": "C:\\E-Commerce\\ShopEase_Backend_2\\ProductsApi\\ProductsApi.csproj",
+        "packagesPath": "C:\\Users\\bbellam\\.nuget\\packages\\",
+        "outputPath": "C:\\E-Commerce\\ShopEase_Backend_2\\ProductsApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\maila\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bbellam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.12, )"
@@ -84,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

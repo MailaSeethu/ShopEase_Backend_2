@@ -103,6 +103,24 @@ namespace ProductsApi.Repository
             }
 
         }
+
+        public List<string> GetAllCategories()
+        {
+            try
+            {
+           
+                var categories = _context.Products
+                                         .Select(x => x.ProductCategory)
+                                         .Distinct()
+                                         .ToList();
+                return categories;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error fetching categories: " + e.Message);
+            }
+        }
+
       
     }
 }

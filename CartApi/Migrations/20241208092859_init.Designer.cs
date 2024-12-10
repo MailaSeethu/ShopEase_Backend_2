@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CartApi.Migrations
 {
     [DbContext(typeof(CartApiContext))]
-    [Migration("20240831182320_init")]
+    [Migration("20241208092859_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

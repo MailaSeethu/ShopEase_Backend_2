@@ -48,8 +48,8 @@ namespace ProductsApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductPrice")
-                        .HasColumnType("int");
+                    b.Property<double>("ProductPrice")
+                        .HasColumnType("float");
 
                     b.Property<double>("ProductRating")
                         .HasColumnType("float");
@@ -66,96 +66,96 @@ namespace ProductsApi.Migrations
                         new
                         {
                             ProductId = 1,
-                            Imageurl = "https://m.media-amazon.com/images/I/61FxtMZu7lL._AC_UY327_FMwebp_QL65_.jpg",
-                            Noofstocks = 19,
+                            Imageurl = "https://th.bing.com/th?id=OIP.1lnPiC5kC4p5yZ0q8IGS9wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2",
+                            Noofstocks = 17,
                             ProductCategory = "Electronics",
-                            ProductDescription = "Boult Audio ZCharge Bluetooth Wireless in Ear Earphones with Mic, 40H Playtime and Super Fast Charging, Environmental Noise Cancellation for Pro+ Calling and IPX5 Water Resistant (Black)",
-                            ProductName = "Hearphones",
-                            ProductPrice = 2500,
+                            ProductDescription = "The AirPods (3rd generation) provide personalized spatial audio with dynamic head tracking and Dolby Atmos support, while being IPX4 rated for sweat and water resistance. With a Lightning Charging Case, they offer up to 6 hours of listening time and 30 hours total. Features include pinch-perfect control, always-on ‘Hey Siri’ functionality, and seamless pairing with Apple devices, allowing for automatic audio switching.",
+                            ProductName = "Apple AirPods (3rd Generation) Wireless Ear Buds",
+                            ProductPrice = 189.99000000000001,
                             ProductRating = 1.0,
                             SellerName = "Appario Retail Private Ltd"
                         },
                         new
                         {
                             ProductId = 2,
-                            Imageurl = "https://m.media-amazon.com/images/I/51+Tdu4vtgL._UX679_.jpg",
-                            Noofstocks = 9,
+                            Imageurl = "https://media.kohlsimg.com/is/image/kohls/3583992_Black_White?wid=805&hei=805&op_sharpen=1",
+                            Noofstocks = 11,
                             ProductCategory = "Fashion",
-                            ProductDescription = "White solid casual shirt, has a mandarin collar, a button placket, 1 pocket, long sleeves with roll-up tab features, curved hem",
-                            ProductName = "Men White Slim Fit Casual Shirt",
-                            ProductPrice = 549,
+                            ProductDescription = "A closet staple, the Nike Sportswear Club Fleece men’s pullover hoodie combines classic style with the soft comfort of fleece for an elevated, everyday look that you really can wear every day.",
+                            ProductName = "Men's Nike Sportswear Club Fleece Pullover Hoodie",
+                            ProductPrice = 48.75,
                             ProductRating = 2.5,
                             SellerName = "Maruti Enterprises"
                         },
                         new
                         {
                             ProductId = 3,
-                            Imageurl = "https://tse4.mm.bing.net/th/id/OIP.cg2VMYhsCeKUvE3tp-Dm5AHaOx?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-                            Noofstocks = 9,
+                            Imageurl = "https://fdn2.gsmarena.com/vv/bigpic/realme-10-pro.jpg",
+                            Noofstocks = 8,
                             ProductCategory = "Electronics",
-                            ProductDescription = "realme 10 Pro+ 5G (Nebula Blue, 128 GB) (8 GB RAM)",
-                            ProductName = "Realme 10Pro",
-                            ProductPrice = 15000,
+                            ProductDescription = "oneplus 10 Pro+ 5G (Nebula Blue, 128 GB) (8 GB RAM)",
+                            ProductName = "oneplus 10 Pro+ 5G (Nebula Blue, 128 GB) (8 GB RAM)",
+                            ProductPrice = 150.0,
                             ProductRating = 3.0,
                             SellerName = "Oppo Mobiles India Private Limited"
                         },
                         new
                         {
                             ProductId = 4,
-                            Imageurl = "https://m.media-amazon.com/images/I/612x7+YtEBL._AC_UL480_QL65_.jpg",
-                            Noofstocks = 9,
+                            Imageurl = "https://m.media-amazon.com/images/I/51USDDRcTjL._AC_SX679_.jpg",
+                            Noofstocks = 12,
                             ProductCategory = "Home & Kitchen",
-                            ProductDescription = "Vinod Bullet Stainless Steel Flask, Double Wall Insulated Steel Flask with Jacket, Hot & Cold Water Bottle 1000 ml, Silver",
-                            ProductName = "Flask",
-                            ProductPrice = 789,
+                            ProductDescription = "Your Perfect Cup of Coffee, Every Time. Holds 8 US Cups--- Excellent for Home, Office, Restaurant, or Gathering. Our thermal carafe is made with durable high-quality stainless steel, triple-layer vacuum insulation, and sweat-free design with zero condensation.",
+                            ProductName = "Heritage66 Thermal Coffee Carafe -Triple Wall Vacuum insulated Flask",
+                            ProductPrice = 26.989999999999998,
                             ProductRating = 4.2000000000000002,
                             SellerName = "Vinod Cookware"
                         },
                         new
                         {
                             ProductId = 5,
-                            Imageurl = "https://images-eu.ssl-images-amazon.com/images/I/81N7FmJhbhL._AC_UL900_SR900,600_.jpg",
-                            Noofstocks = 8,
+                            Imageurl = "https://m.media-amazon.com/images/I/61J5Z-OYUUL._SY522_.jpg",
+                            Noofstocks = 15,
                             ProductCategory = "Books",
-                            ProductDescription = "Life's Amazing Secrets: How to Find Balance and Purpose in Your Life | Inspirational Zen book on motivation, self-development & healthy living",
-                            ProductName = "Life's Amazing Secrets",
-                            ProductPrice = 496,
+                            ProductDescription = "Dear reader, I hope this book feels like a warm hug to you. I wrote this book for the ones who feel everything too deeply. This book was meant to find you if you’ve ever loved someone who didn’t love you back, or if you have a hard time letting go.",
+                            ProductName = "I Don’t Love You Anymore: Moving On and Living Your Best Life",
+                            ProductPrice = 12.99,
                             ProductRating = 5.0,
                             SellerName = "Penguin Ananda (8 October 2018)"
                         },
                         new
                         {
                             ProductId = 6,
-                            Imageurl = "https://m.media-amazon.com/images/I/71TamRUO01L._UY879_.jpg",
-                            Noofstocks = 12,
+                            Imageurl = "https://m.media-amazon.com/images/I/61iYG7ArviL._AC_UL480_FMwebp_QL65_.jpg",
+                            Noofstocks = 10,
                             ProductCategory = "Watches",
-                            ProductDescription = "Diesel watches reflect the confident, assertive nature of the brand itself. Bold and strong, our timepieces will blend seamlessly with any outfit you wear, throughout the year.",
-                            ProductName = "Analog Black Dial Men's Watch-DZ4283",
-                            ProductPrice = 19495,
+                            ProductDescription = "Military Sport Design: Fashionable sporty dial design, military style outlook. Large Dial (acrylic crystal glass window, case diameter high-quality watch band, Reinforced resin band design is more ergonomic, comfortable to wear.",
+                            ProductName = "KXAITO Men's Watches Sports Outdoor Waterproof Military Watch",
+                            ProductPrice = 21.989999999999998,
                             ProductRating = 0.0,
                             SellerName = "Vee Ess Sales Pvt Ltd"
                         },
                         new
                         {
                             ProductId = 7,
-                            Imageurl = " https://tse2.mm.bing.net/th/id/OIP.JDLpwKpZ6fT29FDruRiqTwHaHa?w=193&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+                            Imageurl = "https://m.media-amazon.com/images/I/61i9Rwk3OhL._AC_UL480_FMwebp_QL65_.jpg",
                             Noofstocks = 9,
                             ProductCategory = "Perfume",
-                            ProductDescription = "Men Natural Gas-Free Long-Lasting Body Spray - 70ml",
-                            ProductName = "Envy",
-                            ProductPrice = 185,
+                            ProductDescription = "PURE FRAGRANCE POWDERY TOBACCO: Features the unique scent of tobacco leaves, highlighted by sweet honey and fruity notes with a touch of ginger.",
+                            ProductName = "Dossier - Powdery Tobacco - Eau de Parfum",
+                            ProductPrice = 39.0,
                             ProductRating = 0.0,
                             SellerName = "Vini Cosmetics"
                         },
                         new
                         {
                             ProductId = 8,
-                            Imageurl = "https://tse1.mm.bing.net/th/id/OIP.uvbeZacQbUB-DrnqR-koCgHaLH?pid=ImgDet&rs=1",
+                            Imageurl = "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/electronics-software-and-accessories/accessories/dell/carrying-case/ecoloop-pro-slim-backpack-cp5724s/media-gallery/en/carrying-cases-backpack-ecoloop-cp5724s-gallery-1-en.psd?fmt=png-alpha&pscan=auto&scl=1&hei=476&wid=472&qlt=100,1&resMode=sharp2&size=472,476&chrss=full",
                             Noofstocks = 9,
                             ProductCategory = "Bags",
-                            ProductDescription = "Earth-friendly, and a dependable everyday companion, the Dell Pro Slim Backpack 15 (PO1520PS) provides quality protection for your devices.",
-                            ProductName = "Dell Pro Slim Backpack 15 | PO1520PS",
-                            ProductPrice = 3999,
+                            ProductDescription = "Get the Dell EcoLoop Pro Slim Backpack 15 that protects your gear on-the-go and helps reduce environmental impact.",
+                            ProductName = "Dell EcoLoop Pro Slim Backpack 15",
+                            ProductPrice = 49.990000000000002,
                             ProductRating = 4.2000000000000002,
                             SellerName = "Cannycom Store"
                         },
@@ -163,35 +163,35 @@ namespace ProductsApi.Migrations
                         {
                             ProductId = 9,
                             Imageurl = "https://snpi.dell.com/snp/images/products/large/520-AAUL_MVI4.jpg",
-                            Noofstocks = 9,
+                            Noofstocks = 8,
                             ProductCategory = "HeadPhones",
                             ProductDescription = "Experience exceptional audio clarity with this Teams certified wired headset that allows you to wear the microphone on either side for a customized fit.",
                             ProductName = "Dell Pro Stereo Headset | WH3022",
-                            ProductPrice = 2500,
+                            ProductPrice = 69.989999999999995,
                             ProductRating = 4.2000000000000002,
                             SellerName = "gadgets storm"
                         },
                         new
                         {
                             ProductId = 10,
-                            Imageurl = "amazon.com/images/I/716SnsvjetL._AC_UY327_FMwebp_QL65_.jpg",
-                            Noofstocks = 9,
+                            Imageurl = "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2722dc/media-gallery/s2722dc_cfp_00000ff090_gy.psd?fmt=png-alpha&pscan=auto&scl=1&hei=476&wid=476&qlt=100,1&resMode=sharp2&size=476,476&chrss=full",
+                            Noofstocks = 8,
                             ProductCategory = "Monitors",
-                            ProductDescription = "Feature Height Adjustment, Anti Glare Screen, Pivot Adjustment, USB Hub, High Dynamic Range, Feature	Height Adjustment, Anti Glare Screen, Pivot Adjustment, USB Hub, High Dynamic Range",
+                            ProductDescription = "Feature Height Adjustment, Anti Glare Screen, Pivot Adjustment, USB Hub, High Dynamic Range.",
                             ProductName = "Dell 27 QHD Monitor (USB-C) | S2722DC",
-                            ProductPrice = 15999,
+                            ProductPrice = 259.99000000000001,
                             ProductRating = 4.2000000000000002,
                             SellerName = "BenQ, BenQ Corporation 16 Jihu Road, Neihu 114, Taipei, Taiwan"
                         },
                         new
                         {
                             ProductId = 11,
-                            Imageurl = "https://img3.junaroad.com/uiproducts/13844456/zoom_1-1499510462.jpg",
-                            Noofstocks = 10,
+                            Imageurl = "https://jcpenney.scene7.com/is/image/JCPenney/DP0423202011002668M.tif?$gallery$&wid=350&hei=350&op_sharpen=1",
+                            Noofstocks = 9,
                             ProductCategory = "Watches",
-                            ProductDescription = "Case style: Analog watch with a stainless steel circular case Dial style: Black dial with silver hands Strap style: Stainless steel strap with a butterfly clasp for comfort and style Features: Branding in silver at twelve hour mark and Roman numeral marks through out rest of dial Screw to reset time",
-                            ProductName = "Titan Women Black Dial Watch",
-                            ProductPrice = 3165,
+                            ProductDescription = "Case style: Analog watch with a stainless steel circular case Dial style: Black dial with silver hands Strap style: Stainless steel strap with a butterfly clasp for comfort and style.",
+                            ProductName = "Citizen Diamond Maleficent Sleeping Beauty Womens Diamond Accent Black Stainless Steel Bracelet Watch",
+                            ProductPrice = 32.850000000000001,
                             ProductRating = 4.0,
                             SellerName = "VRP Telematics"
                         });

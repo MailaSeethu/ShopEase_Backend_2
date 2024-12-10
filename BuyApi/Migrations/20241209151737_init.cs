@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace BuyApi.Migrations
 {
     /// <inheritdoc />
@@ -45,6 +47,18 @@ namespace BuyApi.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CouponCodes", x => x.CouponId);
+                });
+
+            migrationBuilder.InsertData(
+                table: "CouponCodes",
+                columns: new[] { "CouponId", "Couponcode", "IsApplicable", "description" },
+                values: new object[,]
+                {
+                    { 1, "SHOPEASE20", true, "Flat $20 off on minimum purchase of $50 and Free shipping." },
+                    { 2, "SUMMERSALE", false, "Flat 25% off on summer collection." },
+                    { 3, "FREESHIP", true, "Free shipping on orders over $50" },
+                    { 4, "SAVE10", true, "Flat $10 off on your first purchase (min purchase of $50)." },
+                    { 5, "BUY2GET50OFF", true, "Buy 2, Get 50% Off on the 3rd One." }
                 });
         }
 
