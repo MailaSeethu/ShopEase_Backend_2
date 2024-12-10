@@ -86,3 +86,10 @@ test-results/
 **/obj/
 **/Debug/
 **/.vs/
+
+
+# Ignore bin and obj directories in any subdirectory
+**/bin/
+**/obj/
+**/Migrations/
+**/.vs/
